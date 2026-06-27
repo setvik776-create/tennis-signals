@@ -1,0 +1,14 @@
+services:
+  enrichment-agent:
+    build:
+      context: .
+    container_name: tennis-enrichment-agent
+    env_file:
+      - .env
+    environment:
+      TENNIS_DATA_DIR: /data
+      TENNIS_LOG_DIR: /logs
+    volumes:
+      - /root/tennis_signals/data:/data
+      - /root/tennis_signals/logs:/logs
+    restart: "no"
