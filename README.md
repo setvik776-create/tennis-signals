@@ -2,7 +2,7 @@
 
 Tennis Signals is an automated tennis prediction system. It scrapes upcoming matches, trains a local model from historical results, generates match predictions, sends Telegram signals, tracks outcomes, and stages weak player-data cases for enrichment.
 
-The repository contains the runnable project code plus the current data/model artefacts needed to reproduce the production state. Real `.env` files and logs are intentionally not committed.
+The repository contains the runnable project code and the historical match database. Generated runtime artefacts, trained `joblib` models, real `.env` files, and logs are intentionally not committed.
 
 ## Current Capabilities
 
@@ -30,16 +30,8 @@ The repository contains the runnable project code plus the current data/model ar
 ├── run_opencode_gemma.sh
 ├── data/
 │   ├── tennis_all_matches_2024_to_now.csv
-│   ├── tennis_model.joblib
-│   ├── target_matches.csv
-│   ├── predictions.csv
-│   ├── low_confidence_predictions.csv
-│   ├── prediction_tracker.csv
-│   ├── enrichment_candidates.csv
-│   ├── player_enrichment_staging.csv
 │   ├── needs_manual_review.csv
-│   ├── enrichment_model_probe.json
-│   └── enrichment_report.txt
+│   └── .gitkeep
 ├── scripts/
 │   ├── scraper.py
 │   ├── predictor.py
@@ -56,19 +48,22 @@ The repository contains the runnable project code plus the current data/model ar
 
 ## Data Files
 
-The `data/` directory is committed so the repo contains the current project state:
+The `data/` directory keeps durable project data and schema placeholders:
 
 - `tennis_all_matches_2024_to_now.csv` - historical match database.
-- `tennis_model.joblib` - trained local model artefact.
-- `target_matches.csv` - latest scraped target matches.
-- `predictions.csv` - latest generated predictions.
-- `low_confidence_predictions.csv` - low-confidence prediction export.
-- `prediction_tracker.csv` - prediction history and result tracking.
-- `enrichment_candidates.csv` - player rows selected for enrichment review.
-- `player_enrichment_staging.csv` - conservative staging table for enrichment.
 - `needs_manual_review.csv` - completed results that could not be parsed safely.
-- `enrichment_model_probe.json` - latest model-router probe result.
-- `enrichment_report.txt` - latest enrichment summary.
+
+Generated runtime artefacts are intentionally ignored by git:
+
+- `tennis_model.joblib`
+- `target_matches.csv`
+- `predictions.csv`
+- `low_confidence_predictions.csv`
+- `prediction_tracker.csv`
+- `enrichment_candidates.csv`
+- `player_enrichment_staging.csv`
+- `enrichment_model_probe.json`
+- `enrichment_report.txt`
 
 ## What Is Not Committed
 

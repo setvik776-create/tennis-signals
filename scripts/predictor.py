@@ -17,6 +17,7 @@ DEFAULT_OUTPUT = BASE_DIR / "data" / "predictions.csv"
 DEFAULT_MODEL = BASE_DIR / "data" / "tennis_model.joblib"
 LOG_FILE = BASE_DIR / "logs" / "predictor.log"
 FEATURES = ["h2h", "p1_surface_wr", "p2_surface_wr", "p1_form", "p2_form", "p1_fatigue", "p2_fatigue"]
+VALID_SURFACES = {"hard", "clay", "grass", "carpet", "unknown"}
 pd = None
 
 
@@ -60,6 +61,17 @@ def parse_dates(values: pd.Series) -> pd.Series:
     return parsed
 
 
+def normalize_surface(value: str) -> str:
+    surface = (value or "").strip()
+    if not surface:
+        return "Unknown"
+    lowered = surface.lower()
+    if lowered in VALID_SURFACES:
+        return lowered.title()
+    logging.warning("Invalid surface normalized to Unknown: %s", surface)
+    return "Unknown"
+
+
 def normalize_history(df: pd.DataFrame) -> pd.DataFrame:
     aliases = {
         "match_date": ["match_date", "date", "tourney_date", "start_date"],
@@ -89,11 +101,20 @@ def normalize_history(df: pd.DataFrame) -> pd.DataFrame:
 
     out = pd.DataFrame(mapped)
     out["match_date"] = parse_dates(out.get("match_date"))
-    out["surface"] = out.get("surface", "").fillna("").astype(str)
+    out["surface"] = out.get("surface", "").fillna("").astype(str).map(normalize_surface)
     out["tournament"] = out.get("tournament", "").fillna("").astype(str)
     for col in ["player1", "player2", "winner"]:
         out[col] = out[col].fillna("").astype(str).str.strip()
-    out = out[(out["player1"] != "") & (out["player2"] != "") & (out["winner"] != "") & (out["player1"] != out["player2"])]
+    invalid_dates = int(out["match_date"].isna().sum())
+    if invalid_dates:
+        logging.warning("Dropping history rows with invalid dates: %d", invalid_dates)
+    out = out[
+        (out["match_date"].notna())
+        & (out["player1"] != "")
+        & (out["player2"] != "")
+        & (out["winner"] != "")
+        & (out["player1"] != out["player2"])
+    ]
     return out.sort_values("match_date", na_position="first").reset_index(drop=True)
 
 
@@ -107,7 +128,11 @@ def normalize_matches(df: pd.DataFrame) -> pd.DataFrame:
     for field in required:
         out[field] = out[field].fillna("").astype(str).str.strip()
     out["match_date"] = parse_dates(out["match_date"])
-    return out[(out["player1"] != "") & (out["player2"] != "")]
+    out["surface"] = out["surface"].map(normalize_surface)
+    invalid_dates = int(out["match_date"].isna().sum())
+    if invalid_dates:
+        logging.warning("Dropping target match rows with invalid dates: %d", invalid_dates)
+    return out[(out["match_date"].notna()) & (out["player1"] != "") & (out["player2"] != "")]
 
 
 def add_match_keys(df: pd.DataFrame) -> pd.DataFrame:

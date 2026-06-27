@@ -7,6 +7,16 @@ __pycache__/
 .venv/
 venv/
 
+data/enrichment_candidates.csv
+data/enrichment_model_probe.json
+data/enrichment_report.txt
+data/low_confidence_predictions.csv
+data/player_enrichment_staging.csv
+data/prediction_tracker.csv
+data/predictions.csv
+data/target_matches.csv
+data/tennis_model.joblib
+
 logs/
 *.log
 
