@@ -49,10 +49,15 @@ def first_existing(columns: Iterable[str], options: list[str]) -> str | None:
 
 
 def parse_dates(values: pd.Series) -> pd.Series:
+    pandas = require_pandas()
     raw = values.fillna("").astype(str).str.strip()
-    ymd = pd.to_datetime(raw, format="%Y%m%d", errors="coerce")
-    generic = pd.to_datetime(raw, errors="coerce")
-    return ymd.fillna(generic)
+    ymd = pandas.to_datetime(raw.where(raw.str.fullmatch(r"\d{8}")), format="%Y%m%d", errors="coerce")
+    iso = pandas.to_datetime(raw.where(raw.str.fullmatch(r"\d{4}-\d{2}-\d{2}")), format="%Y-%m-%d", errors="coerce")
+    parsed = ymd.fillna(iso)
+    bad = raw[parsed.isna() & raw.ne("")]
+    if len(bad):
+        logging.warning("Unparseable dates: %d examples=%s", len(bad), bad.head(10).tolist())
+    return parsed
 
 
 def normalize_history(df: pd.DataFrame) -> pd.DataFrame:

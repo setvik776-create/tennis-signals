@@ -37,6 +37,7 @@ The repository contains the runnable project code plus the current data/model ar
 │   ├── prediction_tracker.csv
 │   ├── enrichment_candidates.csv
 │   ├── player_enrichment_staging.csv
+│   ├── needs_manual_review.csv
 │   ├── enrichment_model_probe.json
 │   └── enrichment_report.txt
 ├── scripts/
@@ -65,6 +66,7 @@ The `data/` directory is committed so the repo contains the current project stat
 - `prediction_tracker.csv` - prediction history and result tracking.
 - `enrichment_candidates.csv` - player rows selected for enrichment review.
 - `player_enrichment_staging.csv` - conservative staging table for enrichment.
+- `needs_manual_review.csv` - completed results that could not be parsed safely.
 - `enrichment_model_probe.json` - latest model-router probe result.
 - `enrichment_report.txt` - latest enrichment summary.
 
@@ -135,7 +137,7 @@ Key enrichment values:
 
 ```env
 GOOGLE_GEMINI_API_KEY=
-GEMINI_BASE_URL=https://generativelanguage.googleapis.com/v1beta
+GEMINI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai
 GEMMA_PRIMARY_MODEL=gemma-4-31b-it
 GEMMA_SECONDARY_MODEL=gemma-4-24b-a4b-it
 GEMINI_LIGHT_MODEL=gemini-3.1-flash-lite

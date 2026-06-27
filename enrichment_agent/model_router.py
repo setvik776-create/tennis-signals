@@ -21,7 +21,10 @@ class ModelChoice:
 class ModelRouter:
     def __init__(self) -> None:
         self.api_key = os.getenv("GOOGLE_GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY") or os.getenv("GOOGLE_API_KEY")
-        self.base_url = os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta").rstrip("/")
+        base_url = os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai").rstrip("/")
+        if base_url.endswith("/v1beta"):
+            base_url = f"{base_url}/openai"
+        self.base_url = base_url
         self.primary_model = os.getenv("GEMMA_PRIMARY_MODEL", "gemma-4-31b-it")
         self.secondary_model = os.getenv("GEMMA_SECONDARY_MODEL", "gemma-4-24b-a4b-it")
         self.light_model = os.getenv("GEMINI_LIGHT_MODEL", "gemini-3.1-flash-lite")

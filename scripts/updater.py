@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import csv
 import logging
 import re
 import sys
@@ -16,9 +17,11 @@ from typing import Any
 BASE_DIR = Path("/root/tennis_signals")
 HISTORY_FILE = BASE_DIR / "data" / "tennis_all_matches_2024_to_now.csv"
 TRACKER_FILE = BASE_DIR / "data" / "prediction_tracker.csv"
+NEEDS_MANUAL_REVIEW_FILE = BASE_DIR / "data" / "needs_manual_review.csv"
 LOG_FILE = BASE_DIR / "logs" / "updater.log"
 ESPN_SCOREBOARD_URL = "https://www.espn.com/tennis/scoreboard/_/date/{date_key}"
 USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36"
+MANUAL_REVIEW_COLUMNS = ["date", "tournament", "reason", "raw_text"]
 
 
 def setup_logging() -> None:
@@ -71,12 +74,38 @@ def infer_winner(text: str) -> tuple[str, str] | None:
     try:
         p1_scores, p2_scores = parse_scores(lines, player1, player2)
     except Exception:
-        p1_scores, p2_scores = [], []
-    p1_sets = sum(1 for p1, p2 in zip(p1_scores, p2_scores) if p1 > p2)
-    p2_sets = sum(1 for p1, p2 in zip(p1_scores, p2_scores) if p2 > p1)
+        return None
+    set_count = min(len(p1_scores), len(p2_scores))
+    if set_count == 0:
+        return None
+    p1_sets = sum(1 for p1, p2 in zip(p1_scores[:set_count], p2_scores[:set_count]) if p1 > p2)
+    p2_sets = sum(1 for p1, p2 in zip(p1_scores[:set_count], p2_scores[:set_count]) if p2 > p1)
+    if p1_sets == p2_sets:
+        return None
     if p2_sets > p1_sets:
         return player2, player1
     return player1, player2
+
+
+def write_manual_review(rows: list[dict[str, str]], path: Path = NEEDS_MANUAL_REVIEW_FILE) -> None:
+    if not rows:
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    existing_keys: set[tuple[str, str, str]] = set()
+    if path.exists():
+        with path.open("r", encoding="utf-8", newline="") as fh:
+            for row in csv.DictReader(fh):
+                existing_keys.add((row.get("date", ""), row.get("tournament", ""), row.get("raw_text", "")))
+    with path.open("a", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, fieldnames=MANUAL_REVIEW_COLUMNS)
+        if fh.tell() == 0:
+            writer.writeheader()
+        for row in rows:
+            key = (row.get("date", ""), row.get("tournament", ""), row.get("raw_text", ""))
+            if key in existing_keys:
+                continue
+            writer.writerow({column: row.get(column, "") for column in MANUAL_REVIEW_COLUMNS})
+            existing_keys.add(key)
 
 
 def infer_surface(tournament: str) -> str:
@@ -96,6 +125,7 @@ async def fetch_espn_results(day: date) -> list[dict[str, str]]:
     url = ESPN_SCOREBOARD_URL.format(date_key=day.strftime("%Y%m%d"))
     logging.info("Opening ESPN results page in headless Chromium: %s", url)
     results: list[dict[str, str]] = []
+    manual_review: list[dict[str, str]] = []
     async with async_playwright() as playwright:
         browser = await playwright.chromium.launch(headless=True)
         page = await browser.new_page(user_agent=USER_AGENT)
@@ -131,6 +161,14 @@ async def fetch_espn_results(day: date) -> list[dict[str, str]]:
                     continue
                 parsed = infer_winner(text)
                 if not parsed:
+                    manual_review.append(
+                        {
+                            "date": day.strftime("%Y%m%d"),
+                            "tournament": tournament,
+                            "reason": "unparseable_completed_result",
+                            "raw_text": re.sub(r"\s+", " ", text).strip()[:1000],
+                        }
+                    )
                     continue
                 winner, loser = parsed
                 results.append(
@@ -158,6 +196,9 @@ async def fetch_espn_results(day: date) -> list[dict[str, str]]:
                         "total_points_won": "Unknown",
                     }
                 )
+    write_manual_review(manual_review)
+    if manual_review:
+        logging.warning("Completed results needing manual review: %d", len(manual_review))
     return results
 
 
