@@ -1,0 +1,136 @@
+created_at,match_date,tournament,surface,player,opponent,confidence,predicted_winner,normalized_player,history_matches,reasons
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,A. Aulia,M. Deatherage,0.504,A. Aulia,a aulia,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,A. Bain,N. Ung,0.504,A. Bain,a bain,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,A. Belkovics,S. Harrison,0.504,S. Harrison,a belkovics,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,A. Eliscu,A. Hayduke II,0.504,A. Hayduke II,a eliscu,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,A. Grechkina,L. Pradkin,0.504,A. Grechkina,a grechkina,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,A. Harmon,S. Webster,0.504,S. Webster,a harmon,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,A. Hayduke II,A. Eliscu,0.504,A. Hayduke II,a hayduke ii,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,A. Jadue,A. Zyryanova,0.504,A. Jadue,a jadue,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,A. Jilly,V. Breazu,0.504,V. Breazu,a jilly,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,A. Li,G. Hakopian,0.504,A. Li,a li,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,A. Major,K. Halmos,0.504,A. Major,a major,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,A. Murthy,A. Shcherbinina,0.504,A. Murthy,a murthy,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,A. Shannon,J. Dunyon,0.504,A. Shannon,a shannon,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,A. Shcherbinina,A. Murthy,0.504,A. Murthy,a shcherbinina,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,A. Tarrio Ponte,T. Gaillard,0.504,T. Gaillard,a tarrio ponte,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,A. Wolf,G. Arangio,0.504,A. Wolf,a wolf,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,A. Zamani,N. Iantosca,0.504,A. Zamani,a zamani,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,A. Zyryanova,A. Jadue,0.504,A. Jadue,a zyryanova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,Vanda Pharmaceuticals Mallorca Championships,Grass,Alejandro Davidovich Fokina,Ethan Quinn,0.5302,Alejandro Davidovich Fokina,alejandro davidovich fokina,116,low_confidence
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,B. Anderson,C. Underwood,0.504,C. Underwood,b anderson,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,B. Kisantal,T. Gubi,0.504,B. Kisantal,b kisantal,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,B. Nagy,R. Chodora,0.504,R. Chodora,b nagy,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,B. Yoris,L. Brotman,0.504,L. Brotman,b yoris,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,C. Baierl,D. Hedgecoe,0.504,C. Baierl,c baierl,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,C. Chinlund,D. Duong,0.504,D. Duong,c chinlund,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,C. Korhonen,D. Smolinskaya,0.504,C. Korhonen,c korhonen,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,C. McGill,L. Oved,0.504,L. Oved,c mcgill,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,C. Ricci,L. Donnelly,0.504,L. Donnelly,c ricci,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,C. Robinson,D. Krasner,0.504,C. Robinson,c robinson,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,C. Sauvant,G. Oboniye,0.504,C. Sauvant,c sauvant,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,C. Stelse,T. Jirousek,0.504,C. Stelse,c stelse,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,C. Swaine,P. Sallay,0.504,P. Sallay,c swaine,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,C. Underwood,B. Anderson,0.504,C. Underwood,c underwood,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,D. Budko,K. Teso,0.504,D. Budko,d budko,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,D. Duong,C. Chinlund,0.504,D. Duong,d duong,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,D. Fishback,G. Avram,0.504,D. Fishback,d fishback,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,D. Hedgecoe,C. Baierl,0.504,C. Baierl,d hedgecoe,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,D. Knesl,V. Vales,0.504,D. Knesl,d knesl,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,D. Kos,H. Best,0.504,D. Kos,d kos,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,D. Krasner,C. Robinson,0.504,C. Robinson,d krasner,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,D. Pop,R. Kis Balazs,0.504,R. Kis Balazs,d pop,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,D. Shadchneva,I. Heinzova,0.504,D. Shadchneva,d shadchneva,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,D. Smolinskaya,C. Korhonen,0.504,C. Korhonen,d smolinskaya,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,D. Wiley,"Hussey, Brady",0.504,D. Wiley,d wiley,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,D. Zmak,P. Pouatcha,0.504,P. Pouatcha,d zmak,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,E. Baraniakova,H. Read,0.504,E. Baraniakova,e baraniakova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,E. Brownback,K. Erickson,0.504,E. Brownback,e brownback,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,E. Crivei,F. Vazquez,0.504,F. Vazquez,e crivei,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,E. Ivanov,L. Cvanciger,0.504,L. Cvanciger,e ivanov,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,E. Mireles,L. Weir,0.504,E. Mireles,e mireles,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,E. Myers,M. Shelton,0.504,M. Shelton,e myers,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,Vanda Pharmaceuticals Mallorca Championships,Grass,Ethan Quinn,Alejandro Davidovich Fokina,0.5302,Alejandro Davidovich Fokina,ethan quinn,36,low_confidence
+2026-06-26T20:30:04Z,2026-06-27,Târgu Mureș,Unknown,F. Balshaw,S. Nagal,0.504,S. Nagal,f balshaw,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,F. Vazquez,E. Crivei,0.504,F. Vazquez,f vazquez,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,G. Arangio,A. Wolf,0.504,A. Wolf,g arangio,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,G. Avram,D. Fishback,0.504,D. Fishback,g avram,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,G. Bernadsky,R. Patil,0.504,G. Bernadsky,g bernadsky,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,G. Guenther,N. Oliver,0.504,N. Oliver,g guenther,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,G. Hakopian,A. Li,0.504,A. Li,g hakopian,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,G. Hornung,M. Markovits,0.504,G. Hornung,g hornung,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,G. Kulevich,L. Murphy,0.504,L. Murphy,g kulevich,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,G. Oboniye,C. Sauvant,0.504,C. Sauvant,g oboniye,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,G. Roach,N. Koppova,0.504,N. Koppova,g roach,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,G. Villegas,L. Murray,0.504,L. Murray,g villegas,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,H. Best,D. Kos,0.504,D. Kos,h best,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,H. McAslin,L. Alexin,0.504,H. McAslin,h mcaslin,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,H. Read,E. Baraniakova,0.504,E. Baraniakova,h read,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,"Hussey, Brady",D. Wiley,0.504,D. Wiley,hussey brady,0,low_confidence;unknown_surface;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,I. Ashar,Z. Kubacha,0.504,I. Ashar,i ashar,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,I. Heinzova,D. Shadchneva,0.504,D. Shadchneva,i heinzova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,ATP Challenger Plovdiv,Grass,I. Montes-de la Torre,S. Kopp,0.504,S. Kopp,i montes de la torre,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,J. Day,P. Bushuev,0.504,J. Day,j day,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,J. Dunyon,A. Shannon,0.504,A. Shannon,j dunyon,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,J. Garcia,M. Sheldon,0.504,M. Sheldon,j garcia,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,J. Saner,N. Bak Szabo,0.504,J. Saner,j saner,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,K. Erickson,E. Brownback,0.504,E. Brownback,k erickson,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,K. Halmos,A. Major,0.504,A. Major,k halmos,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,K. Molnar,P. Bartha,0.504,K. Molnar,k molnar,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,K. Teso,D. Budko,0.504,D. Budko,k teso,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,L. Alexin,H. McAslin,0.504,H. McAslin,l alexin,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,L. Brotman,B. Yoris,0.504,L. Brotman,l brotman,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,L. Cvanciger,E. Ivanov,0.504,L. Cvanciger,l cvanciger,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,L. Donnelly,C. Ricci,0.504,L. Donnelly,l donnelly,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,L. Murphy,G. Kulevich,0.504,L. Murphy,l murphy,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,L. Murray,G. Villegas,0.504,L. Murray,l murray,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,L. Oved,C. McGill,0.504,L. Oved,l oved,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,L. Pradkin,A. Grechkina,0.504,A. Grechkina,l pradkin,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,L. Svatíková,P. Paukstyte,0.504,L. Svatíková,l svatikova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,L. Weir,E. Mireles,0.504,E. Mireles,l weir,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,M. Bartakovics,R. Kis Balazs,0.504,M. Bartakovics,m bartakovics,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,M. Breazu,M. Valkusz,0.504,M. Breazu,m breazu,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,M. Castle,R. Campagnola,0.504,R. Campagnola,m castle,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,M. Deatherage,A. Aulia,0.504,A. Aulia,m deatherage,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,M. Fuduric,S. Shulzhenko,0.504,M. Fuduric,m fuduric,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,M. Landreth,N. Mangiapane,0.504,N. Mangiapane,m landreth,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,M. Markovits,G. Hornung,0.504,G. Hornung,m markovits,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,M. Mazev,R. Yang,0.504,R. Yang,m mazev,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,M. Pawelska,N. Daubnerova,0.504,M. Pawelska,m pawelska,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,M. Sheldon,J. Garcia,0.504,M. Sheldon,m sheldon,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,M. Shelton,E. Myers,0.504,M. Shelton,m shelton,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,M. Valkusz,M. Breazu,0.504,M. Breazu,m valkusz,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,Lexus Eastbourne Open,Grass,Madison Keys,Tatjana Maria,0.5119,Tatjana Maria,madison keys,68,low_confidence
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,N. Bak Szabo,J. Saner,0.504,J. Saner,n bak szabo,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,N. Daubnerova,M. Pawelska,0.504,M. Pawelska,n daubnerova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,N. Iantosca,A. Zamani,0.504,A. Zamani,n iantosca,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,N. Koppova,G. Roach,0.504,N. Koppova,n koppova,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville M01,Unknown,N. Mangiapane,M. Landreth,0.504,N. Mangiapane,n mangiapane,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,N. Oliver,G. Guenther,0.504,N. Oliver,n oliver,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,N. Outcalt,T. Mar,0.504,N. Outcalt,n outcalt,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,N. Ung,A. Bain,0.504,A. Bain,n ung,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,P. Bartha,K. Molnar,0.504,K. Molnar,p bartha,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,P. Bushuev,J. Day,0.504,J. Day,p bushuev,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest W01,Unknown,P. Paukstyte,L. Svatíková,0.504,L. Svatíková,p paukstyte,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,P. Pouatcha,D. Zmak,0.504,P. Pouatcha,p pouatcha,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,P. Sallay,C. Swaine,0.504,P. Sallay,p sallay,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,R. Campagnola,M. Castle,0.504,R. Campagnola,r campagnola,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,R. Chodora,B. Nagy,0.504,R. Chodora,r chodora,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,R. Frank,S. Jara,0.504,R. Frank,r frank,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,R. Kis Balazs,M. Bartakovics,0.504,M. Bartakovics,r kis balazs,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,R. Patil,G. Bernadsky,0.504,G. Bernadsky,r patil,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Men 15,Unknown,R. Yang,M. Mazev,0.504,R. Yang,r yang,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,S. Harrison,A. Belkovics,0.504,S. Harrison,s harrison,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Knoxville W01,Unknown,S. Jara,R. Frank,0.504,R. Frank,s jara,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,ATP Challenger Plovdiv,Grass,S. Kopp,I. Montes-de la Torre,0.504,S. Kopp,s kopp,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,Târgu Mureș,Unknown,S. Nagal,F. Balshaw,0.504,S. Nagal,s nagal,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,S. Shulzhenko,M. Fuduric,0.504,M. Fuduric,s shulzhenko,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,S. Webster,A. Harmon,0.504,S. Webster,s webster,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,T. Gaillard,A. Tarrio Ponte,0.504,T. Gaillard,t gaillard,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,T. Gubi,B. Kisantal,0.504,B. Kisantal,t gubi,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Men 01,Unknown,T. Jirousek,C. Stelse,0.504,C. Stelse,t jirousek,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Newport Beach Women 15,Unknown,T. Mar,N. Outcalt,0.504,N. Outcalt,t mar,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,Lexus Eastbourne Open,Grass,Tatjana Maria,Madison Keys,0.5119,Tatjana Maria,tatjana maria,18,low_confidence
+2026-06-26T20:30:04Z,2026-06-27,UTR Budapest M01,Unknown,V. Breazu,A. Jilly,0.504,V. Breazu,v breazu,0,low_confidence;unknown_surface;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Umag Men 02,Clay,V. Vales,D. Knesl,0.504,D. Knesl,v vales,0,low_confidence;initialed_name;not_found_in_history
+2026-06-26T20:30:04Z,2026-06-27,UTR PTT Waco Women 01,Unknown,Z. Kubacha,I. Ashar,0.504,I. Ashar,z kubacha,0,low_confidence;unknown_surface;initialed_name;not_found_in_history

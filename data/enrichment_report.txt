@@ -1,0 +1,14 @@
+Tennis enrichment report
+Generated: 2026-06-26T20:30:04Z
+Candidate rows: 135
+Unique staging players: 135
+
+Reason counts:
+- low_confidence: 135
+- not_found_in_history: 131
+- initialed_name: 130
+- unknown_surface: 119
+
+Candidates CSV: /data/enrichment_candidates.csv
+Staging CSV: /data/player_enrichment_staging.csv
+Main history was not modified.

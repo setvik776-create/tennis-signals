@@ -6,12 +6,6 @@ __pycache__/
 .venv/
 venv/
 
-data/*.csv
-data/*.json
-data/*.joblib
-data/*.txt
-!data/.gitkeep
-
 logs/
 *.log
 
