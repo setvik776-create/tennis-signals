@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 
-BASE_DIR = Path("/root/tennis_signals")
+BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT = BASE_DIR / "data" / "target_matches.csv"
 LOG_FILE = BASE_DIR / "logs" / "scraper.log"
 MATCH_COLUMNS = ["match_date", "tournament", "surface", "player1", "player2"]
@@ -37,9 +37,16 @@ def target_date(target: str) -> date:
     return today if target == "today" else today + timedelta(days=1)
 
 
+ESPN_JUNK_PATTERNS = re.compile(
+    r"(?i)\b(ESPN\s*Unlmtd|ESPN\+|ESPN\s*Plus|Subscribe|Sign\s*Up|Unlock|Watch\s*Live|Stream)\b"
+)
+
+
 def looks_like_player(line: str) -> bool:
     line = line.strip()
     if not line or line.isdigit():
+        return False
+    if ESPN_JUNK_PATTERNS.search(line):
         return False
     if re.match(r"^\d{1,2}:\d{2}\s?[AP]M(?:,\s*\d{1,2}/\d{1,2})?$", line, re.I):
         return False
@@ -50,6 +57,11 @@ def looks_like_player(line: str) -> bool:
     return bool(re.search(r"[A-Za-zÀ-ž]", line))
 
 
+def has_espn_junk(name: str) -> bool:
+    """Return True if a player name is actually an ESPN UI artefact."""
+    return bool(ESPN_JUNK_PATTERNS.search(name))
+
+
 def parse_competition_text(text: str) -> tuple[str, str] | None:
     lines = [line.strip() for line in text.splitlines() if line.strip()]
     players = [line for line in lines if looks_like_player(line)]
@@ -57,6 +69,9 @@ def parse_competition_text(text: str) -> tuple[str, str] | None:
         return None
     player1, player2 = players[0], players[1]
     if player1 == player2:
+        return None
+    # Skip matches where either player is an ESPN subscription artefact
+    if has_espn_junk(player1) or has_espn_junk(player2):
         return None
     return player1, player2
 
@@ -229,8 +244,18 @@ async def fetch_espn_matches(day: date) -> list[dict[str, str]]:
     url = ESPN_SCOREBOARD_URL.format(date_key=day.strftime("%Y%m%d"))
     logging.info("Opening ESPN scoreboard in headless Chromium: %s", url)
     matches: list[dict[str, str]] = []
+    import shutil
+    exec_path = (
+        shutil.which("chromium-browser")
+        or shutil.which("chromium")
+        or shutil.which("google-chrome")
+        or shutil.which("google-chrome-stable")
+    )
     async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(headless=True)
+        browser = await playwright.chromium.launch(
+            headless=True,
+            **({"executable_path": exec_path} if exec_path else {})
+        )
         page = await browser.new_page(user_agent=USER_AGENT)
         response = await page.goto(url, wait_until="domcontentloaded", timeout=45000)
         status = response.status if response else "unknown"
@@ -286,8 +311,18 @@ async def fetch_tennis_com_matches(day: date) -> list[dict[str, str]]:
 
     url = TENNIS_COM_URL.format(date_key=day.isoformat())
     logging.info("Opening Tennis.com scores in headless Chromium: %s", url)
+    import shutil
+    exec_path = (
+        shutil.which("chromium-browser")
+        or shutil.which("chromium")
+        or shutil.which("google-chrome")
+        or shutil.which("google-chrome-stable")
+    )
     async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(headless=True)
+        browser = await playwright.chromium.launch(
+            headless=True,
+            **({"executable_path": exec_path} if exec_path else {})
+        )
         page = await browser.new_page(user_agent=USER_AGENT)
         response = await page.goto(url, wait_until="networkidle", timeout=60000)
         status = response.status if response else "unknown"

@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-BASE_DIR = Path("/root/tennis_signals")
+BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_HISTORY = BASE_DIR / "data" / "tennis_all_matches_2024_to_now.csv"
 DEFAULT_MATCHES = BASE_DIR / "data" / "tomorrow_matches.csv"
 DEFAULT_OUTPUT = BASE_DIR / "data" / "predictions.csv"

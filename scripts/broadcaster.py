@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 
-BASE_DIR = Path("/root/tennis_signals")
+BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_ENV = BASE_DIR / ".env"
 DEFAULT_PREDICTIONS = BASE_DIR / "data" / "predictions.csv"
 DEFAULT_LOW_CONFIDENCE = BASE_DIR / "data" / "low_confidence_predictions.csv"

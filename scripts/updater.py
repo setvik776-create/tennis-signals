@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any
 
 
-BASE_DIR = Path("/root/tennis_signals")
+BASE_DIR = Path(__file__).resolve().parent.parent
 HISTORY_FILE = BASE_DIR / "data" / "tennis_all_matches_2024_to_now.csv"
 TRACKER_FILE = BASE_DIR / "data" / "prediction_tracker.csv"
 NEEDS_MANUAL_REVIEW_FILE = BASE_DIR / "data" / "needs_manual_review.csv"
@@ -126,8 +126,18 @@ async def fetch_espn_results(day: date) -> list[dict[str, str]]:
     logging.info("Opening ESPN results page in headless Chromium: %s", url)
     results: list[dict[str, str]] = []
     manual_review: list[dict[str, str]] = []
+    import shutil
+    exec_path = (
+        shutil.which("chromium-browser")
+        or shutil.which("chromium")
+        or shutil.which("google-chrome")
+        or shutil.which("google-chrome-stable")
+    )
     async with async_playwright() as playwright:
-        browser = await playwright.chromium.launch(headless=True)
+        browser = await playwright.chromium.launch(
+            headless=True,
+            **({"executable_path": exec_path} if exec_path else {})
+        )
         page = await browser.new_page(user_agent=USER_AGENT)
         response = await page.goto(url, wait_until="domcontentloaded", timeout=45000)
         logging.info("ESPN response status: %s", response.status if response else "unknown")
