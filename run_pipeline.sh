@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE_DIR="/root/tennis_signals"
+BASE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PYTHON="$BASE_DIR/.venv/bin/python"
 TARGET="${1:-tomorrow}"
 MATCHES="$BASE_DIR/data/target_matches.csv"
